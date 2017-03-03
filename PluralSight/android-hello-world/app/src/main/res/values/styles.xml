@@ -6,6 +6,6 @@
     </style>
     <!--This contains properties common across all versions of values -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <item name="android:textColor">#0000a4</item>
+        <item name="android:textColor">#2ca400</item>
     </style>
 </resources>
