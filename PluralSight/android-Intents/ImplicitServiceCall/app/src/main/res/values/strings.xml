@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImplicitServiceCall</string>
+    <string name="menuRunService">Run Service</string>
+    <string name="menuQuit">Quit</string>
+</resources>

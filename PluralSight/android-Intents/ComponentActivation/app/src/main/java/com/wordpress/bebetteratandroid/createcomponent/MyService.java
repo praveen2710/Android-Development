@@ -3,8 +3,10 @@ package com.wordpress.bebetteratandroid.createcomponent;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.IntDef;
 import android.util.Log;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MyService extends Service {
 
@@ -25,6 +27,23 @@ public class MyService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         _callCount++;
         Log.i("MyService","onStartCommand - call #" + _callCount);
+        SimpleDateFormat dateFormat= null;
+        String action = intent.getAction();
+        if(action != null) {
+            if (action.equals("com.wordpress.bebetteratandroid.createcomponent.LOG_TIME")) {
+                dateFormat = new SimpleDateFormat("HH:mm:ss");
+            } else if (action.equals("com.wordpress.bebetteratandroid.createcomponent.LOG_DATE")) {
+                dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+            } else {
+                Log.i("MyService", "unrecongnized action");
+            }
+
+            if(dateFormat != null){
+                Long now = (new Date()).getTime();
+                Log.i("MyService",dateFormat.format(now));
+            }
+        }
+
         return START_NOT_STICKY;
     }
 

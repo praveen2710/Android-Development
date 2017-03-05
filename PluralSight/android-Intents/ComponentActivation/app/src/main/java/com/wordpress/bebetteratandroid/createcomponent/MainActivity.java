@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.menuCallImplicitActivity:
-                showImplicitActivity();
-                break;
             case R.id.menuCallExlpicitActivity:
                 showExplicitActivity();
                 break;
@@ -52,9 +49,14 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * This function intially made call implicity and now should make call explicitly to service
+     */
     private void runService() {
         Log.i("runService","Intialize the service");
         Intent startServiceIntent = new Intent(this,MyService.class);
+        //TODO Using implicit intent causes app crashes?
+//        Intent startServiceIntent = new Intent("com.wordpress.bebetteratandroid.createcomponent.LOG_TIME");
         startService(startServiceIntent);
     }
 
@@ -68,10 +70,5 @@ public class MainActivity extends AppCompatActivity {
         //TODO figure out how to avoid multiple instance of activity from being created?
         showExplicitIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(showExplicitIntent);
-    }
-
-    private void showImplicitActivity() {
-        Log.i("showImplicitActivity","Intialize the implicit activity");
-
     }
 }

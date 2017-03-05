@@ -14,7 +14,7 @@ public class ExplicitActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_implicity);
+        setContentView(R.layout.activity_explicit);
 
         Intent intent = getIntent();
         Log.i("ExplicitActivity","onCreate intent - "+intent.toString());
