@@ -12,7 +12,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -26,10 +25,19 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.wordpress.bebetteratandroid.createcomponent.LOG_DATE"/>
-                <action android:name="com.wordpress.bebetteratandroid.createcomponent.LOG_TIME"/>
+                <action android:name="com.wordpress.bebetteratandroid.createcomponent.LOG_DATE" />
+                <action android:name="com.wordpress.bebetteratandroid.createcomponent.LOG_TIME" />
             </intent-filter>
         </service>
+
+        <receiver
+            android:name=".AirplaneModeReciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
