@@ -15,9 +15,12 @@ Activity,Service,Broadcast Reciever
 * Added functionality to call implicit activity and service with custom menu options
 * Added functionality to call service explicitly
 * Added broadcast receiver to detect airplane mode toggling 
+* Added mutplie activites from single intent
+* Added funtionlaity to access external URL using in-built activity
 
 ## Doubts and question
 * use of constructor vs onCreate in service?
 * prevent multiple instances of activity from being generated?
 * issue when calling service explicitly
-* not seeing reciever work when app is not running
+* ~~not seeing receiver work when app is not running~~
+    1. The log show it is working but since the app is not longer running the debugger detaches from the application and does not hit the break point.

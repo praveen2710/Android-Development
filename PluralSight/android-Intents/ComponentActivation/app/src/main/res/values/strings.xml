@@ -5,4 +5,7 @@
     <string name="menuCallExlpicitActivity">Explicit Activity</string>
     <string name="menuRunService">Run Service</string>
     <string name="menuQuit">Quit</string>
+    <string name="title_activity_hello_world1">HelloWorld Component Activation</string>
+    <string name="menuCallHeloWorld">Hello World Activity</string>
+    <string name="menuOpenLinkedIn">My LinkedIn Profile</string>
 </resources>

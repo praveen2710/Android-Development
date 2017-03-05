@@ -1,12 +1,16 @@
 package com.wordpress.bebetteratandroid.createcomponent;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import java.net.URI;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,12 +45,33 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menuQuit:
                 finish();
                 break;
+            case R.id.menuCallHelloWorld:
+                callHelloWorld();
+                break;
+            case R.id.menuOpenLinkedIn:
+                openLinkedIn();
+                break;
             default:
                 super.onOptionsItemSelected(item);
                 break;
         }
 
         return true;
+    }
+
+    private void openLinkedIn() {
+        Intent openLinkedIn = new Intent("android.intent.action.VIEW");
+        Uri linkedProfile = Uri.parse("https://www.linkedin.com/in/praveenbanthia");
+        openLinkedIn.setData(linkedProfile);
+        startActivity(openLinkedIn);
+    }
+
+    /**
+     * When calling activity explicitly
+     */
+    private void callHelloWorld() {
+        Intent helloWorldActivity =  new Intent("com.wordpress.bebetteratandroid.createcomponent.HELLO_WORLD");
+        startActivity(helloWorldActivity);
     }
 
     /**

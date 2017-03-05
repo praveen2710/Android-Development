@@ -2,4 +2,5 @@
     <string name="app_name">ImplicitServiceCall</string>
     <string name="menuRunService">Run Service</string>
     <string name="menuQuit">Quit</string>
+    <string name="title_activity_hello_world">"HelloWorld from Implicit Service "</string>
 </resources>

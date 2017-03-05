@@ -6,4 +6,8 @@
         android:title="@string/menuRunService"/>
     <item android:id="@+id/menuQuit"
         android:title="@string/menuQuit"/>
+    <item android:id="@+id/menuCallHelloWorld"
+        android:title="@string/menuCallHeloWorld"/>
+    <item android:id="@+id/menuOpenLinkedIn"
+        android:title="@string/menuOpenLinkedIn"/>
 </menu>
