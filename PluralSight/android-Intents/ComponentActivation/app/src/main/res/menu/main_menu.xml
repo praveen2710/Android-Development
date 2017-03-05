@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuCallImplicitActivity"
+           android:title="@string/menuCallImplicitActivity"/>
+    <item android:id="@+id/menuCallExlpicitActivity"
+        android:title="@string/menuCallExlpicitActivity"/>
+    <item android:id="@+id/menuRunService"
+        android:title="@string/menuRunService"/>
+    <item android:id="@+id/menuQuit"
+        android:title="@string/menuQuit"/>
+</menu>

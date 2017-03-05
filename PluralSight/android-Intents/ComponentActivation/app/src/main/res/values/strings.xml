@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CreateComponent</string>
+    <string name="title_activity_implicity">ImplicityActivity</string>
+    <string name="menuCallImplicitActivity">Implicit Activity</string>
+    <string name="menuCallExlpicitActivity">Explicit Activity</string>
+    <string name="menuRunService">Run Service</string>
+    <string name="menuQuit">Quit</string>
 </resources>

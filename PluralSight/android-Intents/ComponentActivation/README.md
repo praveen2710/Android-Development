@@ -9,3 +9,11 @@ Activity,Service,Broadcast Reciever
 * Have intent filter's in *AndroidManifest.XML* for various components 
 
 ## Code links
+
+## Development Updates
+* Added the initial commit
+* Added functionality to call implicit activity and service with custom menu options
+
+## Doubts and question
+* use of constructor vs onCreate in service?
+* prevent multiple instances of activity from being generated?
