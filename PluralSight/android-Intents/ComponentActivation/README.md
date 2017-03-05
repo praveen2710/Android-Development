@@ -13,7 +13,11 @@ Activity,Service,Broadcast Reciever
 ## Development Updates
 * Added the initial commit
 * Added functionality to call implicit activity and service with custom menu options
+* Added functionality to call service explicitly
+* Added broadcast receiver to detect airplane mode toggling 
 
 ## Doubts and question
 * use of constructor vs onCreate in service?
 * prevent multiple instances of activity from being generated?
+* issue when calling service explicitly
+* not seeing reciever work when app is not running
