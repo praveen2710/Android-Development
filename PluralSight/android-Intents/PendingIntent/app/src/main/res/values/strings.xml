@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">PendingIntent</string>
+    <string name="menuPendingIntent">Create PendingIntents</string>
+    <string name="menuQuit">Exit</string>
+    <string name="title_activity_intent_target">IntentTargetActivity</string>
 </resources>
