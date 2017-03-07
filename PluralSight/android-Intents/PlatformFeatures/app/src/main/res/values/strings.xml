@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PlatformFeatures</string>
+    <string name="CheckBattery">Check Battery Status</string>
+    <string name="menuExit">exit</string>
+    <string name="showActivity">show Activity in 5 sec</string>
+    <string name="title_activity_delayed">DelayedActivity</string>
+    <string name="menuLinkedIn">Show LinkedIn</string>
+    <string name="MyContact">Call Me</string>
 </resources>
